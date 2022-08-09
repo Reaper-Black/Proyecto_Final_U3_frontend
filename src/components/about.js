@@ -24,7 +24,7 @@ const Me = () => {
                     <div> Onyx Ricardo Rios Valencia </div>
                     <div>Matricula: 190935</div>
                     <div> Maria Guadalupe Legorreta Millan </div>
-                    <div>Matricula: 171651</div>
+                    <div>Matricula: 171615</div>
                     <div> Edith Ruiz Hernandez </div>
                 </div>
                     <div>
