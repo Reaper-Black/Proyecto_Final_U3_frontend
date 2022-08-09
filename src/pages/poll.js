@@ -11,7 +11,7 @@ const Poll = () => {
 
     useEffect(() => {
         const interval = setInterval(() => {
-            fetch(`http://localhost:3001/polls/${pollId}`)
+            fetch(`https://proyecto-final-u3-backend.herokuapp.com/polls/${pollId}`)
                 .then(response => response.json())
                 .then(setPoll)
         }, 500)

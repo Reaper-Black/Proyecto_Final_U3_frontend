@@ -19,7 +19,7 @@ const Home = () => {
       question: event.target.elements.question.value,
       answers: answers.filter(Boolean)
     }
-    const response = await fetch('http://localhost:3001/polls', {
+    const response = await fetch('https://proyecto-final-u3-backend.herokuapp.com/polls', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'

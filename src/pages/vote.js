@@ -13,14 +13,14 @@ const Vote = () => {
     const { id: pollId } = useParams()
 
     useEffect(() => {
-        fetch(`http://localhost:3001/polls/${pollId}`)
+        fetch(`https://proyecto-final-u3-backend.herokuapp.com/polls/${pollId}`)
             .then(response => response.json())
             .then(setPoll)
 
     }, [pollId])
 
     const submitVote = async () => {
-        await fetch(`http://localhost:3001/polls/${pollId}/votes/${answerId}`, {
+        await fetch(`https://proyecto-final-u3-backend.herokuapp.com/polls/${pollId}/votes/${answerId}`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
